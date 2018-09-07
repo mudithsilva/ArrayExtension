@@ -1,0 +1,15 @@
+//
+//  ArrayExtension.swift
+//  MYP
+//
+//  Created by Mudith Chathuranga on 9/3/18.
+//  Copyright © 2018 Chathuranga. All rights reserved.
+//
+
+import Foundation
+
+extension Array {
+    subscript (safe index: Int) -> Element? {
+        return indices ~= index ? self[index] : nil
+    }
+}
