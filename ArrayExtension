@@ -13,3 +13,12 @@ extension Array {
         return indices ~= index ? self[index] : nil
     }
 }
+
+
+/// Usage :-
+
+self.projectionList[safe: row] != nil
+
+guard self.projectionList[safe: row] != nil else {
+    return
+}
